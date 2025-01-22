@@ -134,8 +134,8 @@
         color: purple;
       }
 
-      /* RESPONSIVE DESIGN QUERIES*/
-      @media (max-width: 800px) {
+      /* RESPONSIVE DESIGN QUERIES REMERBER 800*/
+      @media (max-width: 990px) {
         #content h1 {
           font-size: 2.5rem;
         }

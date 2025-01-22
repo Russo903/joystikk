@@ -7,8 +7,10 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Game {
     private String name;
-    private String backgrouns_image;
+    private String background_image;
     private double rating;
+
+    
 }
 
 
