@@ -1,0 +1,10 @@
+com/russo_web/controllers/GameController.class
+com/russo_web/config/AppConfig.class
+com/russo_web/ServletInitializer.class
+com/russo_web/model/Pokemon.class
+com/russo_web/controllers/PokemonController.class
+com/russo_web/RussoWebApplication.class
+com/russo_web/model/Game.class
+com/russo_web/service/PokemonService.class
+com/russo_web/service/GameService.class
+com/russo_web/controllers/Controller.class
