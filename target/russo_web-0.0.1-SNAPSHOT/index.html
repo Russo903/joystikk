@@ -16,6 +16,7 @@
     <link href="style/blog.css" rel="stylesheet" type="text/css" />
     <link href="style/obj.css" rel="stylesheet" type="text/css" />
     <link href="style/info.css" rel="stylesheet" type="text/css" />
+    <link href="style/videoGame.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -40,11 +41,14 @@
     <!-- Put JS reusable first (these are called by CGFs or by the page like the dropDown FW). -->
     <script src="_JS_reusable/dropDownFW.js"></script>
     <script src="_JS_reusable/MakeObj.js"></script>
+    <script src="_JS_reusable/MakeVideoGameReview.js"></script>
+
 
     <!-- JS Content Generating functions (these are called by the router). -->
     <script src="_JS_CGF/CarsComingSoon.js"></script>
     <script src="_JS_CGF/MakeObj_CGF.js"></script>
     <script src="_JS_CGF/infoContent.js"></script>
+    <script src="_JS_CGF/MakeVideoGameReview_CGF.js"></script> <!-- CHANGE TO VIDEO GAME-->
 
     <!-- React reusable (these are called by CGFs). -->
     <script type="text/babel" src="_React_reusable/ConvertEle.js"></script>
@@ -87,9 +91,9 @@
               </div>
 
               <div class="dropDown">
-                <div class="dropHeader">Search</div>
+                <div class="dropHeader">Homework</div>
                 <div class="dropContent">
-                  <Link to="/cars">Games</Link> <br />
+                  <Link to="/gamesObj">JS Games Objects</Link> <br />
                   <Link to="/myObj">BackLog</Link> <br />
                   <a target="_blank" href="docs/Russo_database.pdf">
                     My DB PDF
@@ -111,8 +115,8 @@
             <Route path="/" exact component={Home} />
             <Route path="/home" component={Home} />
             <Route
-              path="/cars"
-              component={() => <ConvertEle ele={CarsComingSoon()} />}
+              path="/gamesObj"
+              component={() => <ConvertEle ele={MakeVideoGameReview_CGF()} />}
             />
             <Route
               path="/myObj"
