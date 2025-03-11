@@ -89,6 +89,23 @@ function Blog() {
                     I added two selectors and a review posting feature, and I'm happy with the result. 
                     You can change your rating and switch to an alternative game cover if desired.
                 </p>
+                
+                <h4>HW5 DATABASE API</h4>
+                <p>
+                    To see my <strong>List Users API</strong> open up in a new tab,
+                    click <a href="webUser/getAll" target="_blank">here</a>. 
+                    <br></br>
+                    <br></br>
+                    To see my <strong>Games API</strong> open up in a new tab,
+                    click <a href="other/getAll" target="_blank">here</a>. 
+                    <br></br>
+                    <br></br>
+                    Click <a target="_blank" href="docs/WEB-API-DB-ERRORS.pdf">here</a> to see my Web API error document 
+                    <br></br>
+                    <br></br>
+                    Prior to this week Ive made no relational databases before. Once before I did use mongo for JWT authentication which allowed users browsers to store cookies and let them stay signed in. It also hashed the users passwords which I found pretty neat. This week I learned a lot about react and getting the front end to be able to pull from the back end making all the technologies work together.
+
+                </p>
                 <br/>
 
             </div>
