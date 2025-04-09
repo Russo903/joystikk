@@ -6,10 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
     <link href="style/main.css" rel="stylesheet" type="text/css" />
-<!--    <link href="style/joystikk.css∂" rel="stylesheet" type="text/css" />-->
-     <link href="style/dropDown.css" rel="stylesheet" type="text/css" />
+    <!--    <link href="style/joystikk.css∂" rel="stylesheet" type="text/css" />-->
+    <link href="style/dropDown.css" rel="stylesheet" type="text/css" />
     <link href="style/myDropDown.css" rel="stylesheet" type="text/css" />
     <link href="style/home.css" rel="stylesheet" type="text/css" />
     <link href="style/cars.css" rel="stylesheet" type="text/css" />
@@ -17,9 +16,18 @@
     <link href="style/obj.css" rel="stylesheet" type="text/css" />
     <link href="style/info.css" rel="stylesheet" type="text/css" />
     <link href="style/videoGame.css" rel="stylesheet" type="text/css" />
-
-
-
+    <link href="style/clickSort.css" rel="stylesheet" type="text/css" />
+    <link href="style/logonReact.css" rel="stylesheet" type="text/css" />
+    <link
+      href="style/UserInsertOrUpdate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="style/GameInsertOrUpdate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- You need these two CDNs to use react, their version numbers must match -->
     <!-- changed version on 10-20-2022 from 16.3.1 to 18 for react and react-dom -->
@@ -42,20 +50,31 @@
     <script src="_JS_reusable/dropDownFW.js"></script>
     <script src="_JS_reusable/MakeObj.js"></script>
     <script src="_JS_reusable/MakeVideoGameReview.js"></script>
-
+    <script src="_JS_reusable/sortOrder.js"></script>
+    <script src="_JS_reusable/filterObjList.js"></script>
+    <script src="_JS_reusable/jsSort.js"></script>
+    <script src="_JS_reusable/ajax_alt.js"></script>
 
     <!-- JS Content Generating functions (these are called by the router). -->
     <script src="_JS_CGF/CarsComingSoon.js"></script>
     <script src="_JS_CGF/MakeObj_CGF.js"></script>
     <script src="_JS_CGF/infoContent.js"></script>
-    <script src="_JS_CGF/MakeVideoGameReview_CGF.js"></script> <!-- CHANGE TO VIDEO GAME-->
+    <script src="_JS_CGF/MakeVideoGameReview_CGF.js"></script>
+    <!-- CHANGE TO VIDEO GAME-->
 
     <!-- React reusable (these are called by CGFs). -->
     <script type="text/babel" src="_React_reusable/ConvertEle.js"></script>
+    <script type="text/babel" src="_React_reusable/AjaxGames.js"></script>
+    <script type="text/babel" src="_React_reusable/AjaxUsers.js"></script>
 
     <!-- React Content Generating functions (these are called by the router) -->
     <script type="text/babel" src="_React_CGF/Blog.js"></script>
     <script type="text/babel" src="_React_CGF/Home.js"></script>
+    <script type="text/babel" src="_React_CGF/LogonReact.js"></script>
+    <script type="text/babel" src="_React_CGF/GetProfileReact.js"></script>
+    <script type="text/babel" src="_React_CGF/LogoffReact.js"></script>
+    <script type="text/babel" src="_React_CGF/UserInsertOrUpdate.js"></script>
+    <script type="text/babel" src="_React_CGF/GameInsertOrUpdate.js"></script>
 
     <!-- Any React scripts (which typically have JSX) needs script type="text/babel" -->
 
@@ -83,7 +102,7 @@
               <div class="dropDown">
                 <div class="dropHeader">Account</div>
                 <div class="dropContent">
-                  <Link to="/register">Register</Link> <br />
+                  <Link to="/userInsert">Register</Link> <br />
                   <Link to="/login">Log In</Link> <br />
                   <Link to="/logout">Log Out</Link> <br />
                   <Link to="/profile">Get Profile</Link> <br />
@@ -95,6 +114,8 @@
                 <div class="dropContent">
                   <Link to="/gamesObj">JS Games Objects</Link> <br />
                   <Link to="/myObj">BackLog</Link> <br />
+                  <Link to="/otherReact">JS Games List</Link> <br />
+                  <Link to="/webUserReact">Web User List</Link> <br />
                   <a target="_blank" href="docs/Russo_database.pdf">
                     My DB PDF
                   </a>
@@ -127,6 +148,19 @@
               component={() => <ConvertEle ele={infoContent()} />}
             />
             <Route path="/blog" component={Blog} />
+            <Route
+              path="/otherReact"
+              component={() => AjaxGames("other/getAll")}
+            />
+            <Route
+              path="/webUserReact"
+              component={() => AjaxUsers("webUser/getAll")}
+            />
+            <Route path="/login" component={LogonReact} />
+            <Route path="/profile" component={GetProfileReact} />
+            <Route path="/logout" component={LogoffReact} />
+            <Route path="/userInsert" component={UserInsertOrUpdate} />
+            <Route path="/gameInsert" component={GameInsertOrUpdate} />
           </div>
 
           <div id="footer">Gino Russo</div>

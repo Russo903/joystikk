@@ -46,7 +46,7 @@ public class WebUserView {
                 sd.userEmail = Format.fmtString(results.getObject("user_email"));
                 sd.userPassword = Format.fmtString(results.getObject("user_password"));
                 sd.userImage = Format.fmtString(results.getObject("user_image"));
-                sd.birthday = Format.fmtDate(results.getObject("birthday"));
+                sd.birthday = Format.fmtString(results.getObject("birthday"));
                 sd.membershipFee = Format.fmtDollar(results.getObject("membership_fee"));
                 sd.userRoleId = Format.fmtInteger(results.getObject("web_user.user_role_id"));
                 sd.userRoleType = Format.fmtString(results.getObject("user_role_type"));

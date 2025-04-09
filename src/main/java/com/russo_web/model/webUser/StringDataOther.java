@@ -13,4 +13,11 @@ public class StringDataOther {
     public String errorMsg = ""; // not actually in the database, used by the app
     // to convey success or failure.
 
+    public int characterCount() {
+        String s = this.game_id + this.game_title + this.image_url +
+                this.rating + this.review + this.web_user_id +
+                this.added_to_backlog + this.user_email + this.errorMsg;
+        return s.length();
+    }
+
 }

@@ -5,9 +5,14 @@
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/controllers/GameController.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/controllers/OtherController.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/controllers/PokemonController.java
+/Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/controllers/RoleController.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/controllers/WebUserController.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/Game.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/Pokemon.java
+/Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/role/StringData.java
+/Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/role/StringDataList.java
+/Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/webUser/DbMods.java
+/Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/webUser/GameDbMods.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/webUser/StringData.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/webUser/StringDataList.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/com/russo_web/model/webUser/StringDataListOther.java
@@ -17,5 +22,8 @@
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/dbUtils/DbConn.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/dbUtils/Format.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/dbUtils/Json.java
+/Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/dbUtils/PrepStatement.java
+/Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/dbUtils/Validate.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/view/OtherTableView.java
+/Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/view/RoleView.java
 /Users/ginorusso_1/VSCodeProjects/WEB DEV/russo_web/src/main/java/view/WebUserView.java

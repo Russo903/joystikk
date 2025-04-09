@@ -1,0 +1,88 @@
+.clickSort {
+    text-align: center;
+}
+
+.clickSort table {
+    margin: auto;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.clickSort th {
+    padding: 0.5rem;
+    background-color: #a66bc3;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: left;
+    white-space: nowrap;
+    color: black;
+}
+
+.clickSort th:hover {
+    background-color: #8e5aa8;
+}
+
+.clickSort th img {
+    width: 0.75rem;
+}
+
+.clickSort td {
+    padding: 0.5rem;
+    background-color: #e8e8e8;
+    font-size: 1rem;
+    color: black;
+}
+
+.clickSort .shadowImage img {
+    width: 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem #999999;
+}
+
+.clickSort .wideImage img {
+    width: 12rem;
+}
+
+.clickSort .textAlignLeft {
+    text-align: left;
+}
+
+.clickSort .textAlignRight {
+    text-align: right;
+}
+
+.clickSort .textAlignCenter {
+    text-align: center;
+}
+
+.clickSort .nowrap {
+    white-space: nowrap;
+}
+
+.clickSort h1 {
+    font-size: 1.8rem;
+    color: #6b3e8e;
+    margin-bottom: 1rem;
+}
+
+.clickSort input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #a66bc3;
+    border-radius: 0.3rem;
+    width: 15rem;
+}
+
+.clickSort button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #a66bc3;
+    color: black;
+    border: none;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+.clickSort button:hover {
+    background-color: #8e5aa8;
+}
