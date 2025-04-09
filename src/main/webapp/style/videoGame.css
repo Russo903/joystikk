@@ -1,0 +1,143 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.game-Card-Container{
+    padding-top: 1rem;
+
+}
+
+/* Game Card Container */
+.gameCardContainer {
+    width: 100%;
+    max-width: 1200px; /* Keeps it centered and not too wide on large screens */
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+
+}
+
+/* Image Container */
+.imageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Game Title */
+h3 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: auto;
+}
+
+/* Game Cover Image */
+.vgCover {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Image Selector */
+.vgCoverSelection {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    background: #2a2a2a;
+    color: white;
+    cursor: pointer;
+}
+
+/* Game Info Section */
+.vgInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Makes it take up the remaining space */
+}
+
+/* Review Input Field */
+.vgReviewInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: white;
+}
+
+/* Review Display */
+.vgReviewP {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Rating Section */
+.vgRatingC {
+    padding: 5px;
+    border-radius: 5px;
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #888;
+}
+
+/* Post Button */
+.vgPostButton {
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: #937bca;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.vgPostButton:hover {
+    background: #846ebc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gameCardContainer {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .vgCover {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+
+    }
+}

@@ -1,0 +1,173 @@
+/*.blog {*/
+/*    background-color: lightgrey;*/
+/*    padding:1rem;*/
+/*}*/
+/*.blog h4 {*/
+/*    color:blueviolet;*/
+/*    margin-top:0rem;*/
+/*}*/
+
+
+/*  You can only use the "slash star ... star slash" style comment inside a style sheet */
+
+.blog
+{
+    /* Prevents tiny white border inside browser window. */
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.blog a{
+    color: #a855f7;
+}
+
+.blog p{
+    color: white;
+}
+
+
+.blog {
+  background-color: #111827; /* red, green, blue (255 is max)
+                                                   this is the turqoise color */
+  color: white; /* color of font */
+  font-family: sans-serif; /* "no tail" font is more readable for small font */
+  padding-top: 4.2rem;
+
+  height: 280vh;
+  background-image: url("../pics/transparent_controllers.png");
+  background-position: center;
+}
+
+
+/*#navbar {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  background-color: #1e2736;*/
+/*  position: fixed;*/
+/*  z-index: 10;*/
+/*  width: 100%;*/
+/*  top: 0;*/
+/*  height: 4.8rem;*/
+/*}*/
+
+/*#title {*/
+/*  color: #a855f7;*/
+/*  margin-left: 1.2rem;*/
+/*}*/
+
+/*#nav {*/
+/*  margin-left: auto;*/
+/*  color: rgba(255, 255, 255, 0.861);*/
+/*  margin-right: 1.2rem;*/
+/*}*/
+
+/*#footer {*/
+/*  position: fixed;*/
+/*  bottom: 0;*/
+/*  text-align: center;*/
+/*  width: 100%;*/
+/*  padding: 7px;*/
+/*  background-color: #1e2736;*/
+/*  color: white;*/
+/*  color: rgba(255, 255, 255, 0.861);*/
+/*  z-index: 10;*/
+/*}*/
+
+
+
+
+.blog {
+    color: white;
+    padding: 4rem;
+}
+
+.blog a {
+    text-decoration: none;
+}
+.blog a:hover {
+    color: purple;
+}
+
+/* RESPONSIVE DESIGN QUERIES REMERBER 800*/
+@media (max-width: 990px) {
+    .blog #topper h1 {
+        font-size: 2.5rem;
+    }
+    .blog .cards-container {
+        display: flex;
+        flex-direction: column;
+        height: 100rem;
+    }
+
+    .blog .info-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog .cards-container h2 {
+        font-size: 1.7rem;
+    }
+
+    .blog .cards-container p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 315px) {
+    .blog #topper h1 {
+        font-size: 2rem;
+    }
+
+    /*#navbar {*/
+    /*  justify-content: center;*/
+    /*  flex-wrap: wrap;*/
+    /*  align-items: center;*/
+    /*  text-align: center;*/
+    /*}*/
+
+    /*#nav {*/
+    /*  width: 100%;*/
+    /*  margin-left: 2.4rem;*/
+    /*  margin-top: 0;*/
+    /*}*/
+
+    /*#title {*/
+    /*  margin-bottom: 0;*/
+    /*}*/
+
+    .blog .cards-container img {
+        height: 8rem;
+    }
+
+    .blog .cards-container {
+        height: 110rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .blog .cards-container h2 {
+        font-size: 30px;
+    }
+    .blog .cards-container p {
+        font-size: 20px;
+    }
+    .blog .cards-container img {
+        height: 20rem;
+    }
+
+    .blog .cards-container {
+        height: 100rem;
+    }
+
+    .blog #topper {
+        height: 35rem;
+    }
+
+    .blog #toppper h1 {
+        font-size: 4.2rem;
+    }
+
+    .blog #topper p {
+        font-size: 2rem;
+    }
+}
